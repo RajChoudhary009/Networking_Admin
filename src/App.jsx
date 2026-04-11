@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { BrowserRouter, Routes, Route, Outlet, Navigate } from "react-router-dom";
+import { UserContaxt } from "../src/store/userData";
 
 import { Navigation } from "./components/navigation";
 import { Header } from "./components/header";
@@ -28,7 +29,13 @@ export const scroll = new SmoothScroll('a[href*="#"]', {
 });
 
 const PrivateRoute = () => {
+  const { userData} = useContext(UserContaxt)
+
   const token = localStorage.getItem("global_user_token");
+
+  if (userData && userData.role !== "admin") {
+    return <Navigate to="/login" replace />;
+  }
 
   if (!token) {
     return <Navigate to="/login" replace />;
@@ -38,7 +45,6 @@ const PrivateRoute = () => {
 };
 
 const App = () => {
-
   const [landingPageData, setLandingPageData] = useState({});
 
   useEffect(() => {
