@@ -1,0 +1,184 @@
+{
+  "Header": {
+    "title": "Build Your Network & Earn Rewards",
+    "paragraph": "Join our community and grow your team while earning exclusive rewards. Invite friends, level up through ranks, and unlock exciting bonuses as you climb higher in the network."
+  },
+  "About": {
+    "paragraph": "Join our growing community and take your network to the next level. Build strong teams, connect with like-minded individuals, and unlock rewards as you progress through the ranks. Whether you're starting out or looking to expand, our platform provides the tools and support to achieve success.",
+    "Why": [
+      "Grow your team efficiently",
+      "Track referrals and progress",
+      "Access exclusive rewards",
+      "Achieve higher ranks faster"
+    ],
+    "Why2": [
+      "Learn from experienced mentors",
+      "Leverage proven networking ",
+      "Boost earnings through teamwork",
+      "Stay motivated and engaged"
+    ]
+  },
+  "Gallery": [
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/01-large.jpg",
+      "smallImage": "img/portfolio/01-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/02-large.jpg",
+      "smallImage": "img/portfolio/02-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/03-large.jpg",
+      "smallImage": "img/portfolio/03-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/04-large.jpg",
+      "smallImage": "img/portfolio/04-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/05-large.jpg",
+      "smallImage": "img/portfolio/05-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/06-large.jpg",
+      "smallImage": "img/portfolio/06-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/07-large.jpg",
+      "smallImage": "img/portfolio/07-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/08-large.jpg",
+      "smallImage": "img/portfolio/08-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/09-large.jpg",
+      "smallImage": "img/portfolio/09-small.jpg"
+    }
+  ],
+  "Services": [
+    {
+      "icon": "fa fa-wordpress",
+      "name": "Team Building Tools",
+      "text": "Use our platform to build and manage your team efficiently. Track member growth and monitor performance at every level."
+    },
+    {
+      "icon": "fa fa-cart-arrow-down",
+      "name": "Referral System",
+      "text": "Easily share referral links and invite friends to join your network. Every referral brings you closer to higher rewards."
+    },
+    {
+      "icon": "fa fa-cloud-download",
+      "name": "Training Materials",
+      "text": "Access exclusive training resources, guides, and tutorials to maximize your network growth and earning potential."
+    },
+    {
+      "icon": "fa fa-language",
+      "name": "Global Networking",
+      "text": "Connect with members from around the world and expand your influence across multiple regions seamlessly."
+    },
+    {
+      "icon": "fa fa-plane",
+      "name": "Incentive Programs",
+      "text": "Unlock exciting bonuses, travel rewards, and exclusive incentives as you climb the ranks in your network."
+    },
+    {
+      "icon": "fa fa-pie-chart",
+      "name": "Performance Analytics",
+      "text": "Track your network growth, monitor team performance, and optimize your strategy using our detailed analytics dashboard."
+    }
+  ],
+  "Testimonials": [
+    {
+      "img": "img/testimonials/01.jpg",
+      "text": "💥 \"Joining this network changed my life! I grew my team fast, earned rewards, and unlocked amazing bonuses every week!\"",
+      "name": "Sarah W."
+    },
+    {
+      "img": "img/testimonials/02.jpg",
+      "text": "🚀 \"I hit my first milestone in just 2 weeks! The referral system and mentorship make it so easy to succeed.\"",
+      "name": "Michael L."
+    },
+    {
+      "img": "img/testimonials/03.jpg",
+      "text": "🌟 \"The training resources are amazing! I learned how to motivate my team and boost my earnings like never before.\"",
+      "name": "Priya S."
+    },
+    {
+      "img": "img/testimonials/04.jpg",
+      "text": "🔥 \"Our community is full of winners! Seeing others succeed keeps me motivated to hit my own goals every day.\"",
+      "name": "David J."
+    },
+    {
+      "img": "img/testimonials/05.jpg",
+      "text": "💎 \"Tracking team performance is super easy. I plan strategies, grow my network, and unlock rewards consistently!\"",
+      "name": "Anita D."
+    },
+    {
+      "img": "img/testimonials/06.jpg",
+      "text": "🏆 \"Joining this network was the best decision ever! From mentorship to earning rewards, it’s an incredible journey!\"",
+      "name": "Rohan M."
+    }
+  ],
+  "Team": [
+    {
+      "img": "img/team/01.jpg",
+      "name": "John Doe",
+      "job": "Director"
+    },
+    {
+      "img": "img/team/02.jpg",
+      "name": "Mike Doe",
+      "job": "Senior Designer"
+    },
+    {
+      "img": "img/team/03.jpg",
+      "name": "Jane Doe",
+      "job": "Senior Designer"
+    },
+    {
+      "img": "img/team/04.jpg",
+      "name": "Karen Doe",
+      "job": "Project Manager"
+    }
+  ],
+  "Contact": {
+    "address": "4321 California St, San Francisco, CA 12345 ",
+    "phone": "+1 123 456 1234",
+    "email": "info@company.com",
+    "facebook": "fb.com",
+    "twitter": "twitter.com",
+    "youtube": "youtube.com"
+  },
+  "Features": [
+    {
+      "icon": "fa fa-comments-o",
+      "title": "Connect with Your Team",
+      "text": "Communicate with your team instantly and coordinate strategies to grow your network faster."
+    },
+    {
+      "icon": "fa fa-bullhorn",
+      "title": "Promote Opportunities",
+      "text": "Share referral links, invite friends, and spread the word to unlock exclusive rewards and bonuses."
+    },
+    {
+      "icon": "fa fa-group",
+      "title": "Build Your Network",
+      "text": "Expand your team by recruiting members and climb the ranks to earn bigger incentives."
+    },
+    {
+      "icon": "fa fa-magic",
+      "title": "Earn Rewards & Bonuses",
+      "text": "Achieve milestones, reach higher ranks, and unlock exciting bonuses as your network grows."
+    }
+  ]
+}
