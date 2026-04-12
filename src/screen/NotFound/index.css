@@ -1,0 +1,125 @@
+/* Full screen gradient background */
+.access-denied-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: linear-gradient(135deg, #667eea, #764ba2); */
+    font-family: "Poppins", sans-serif;
+}
+
+/* Glass card */
+.access-box {
+    position: relative;
+    /* important */
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    padding: 50px 40px;
+    text-align: center;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+    max-width: 400px;
+    width: 90%;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+/* 404 text */
+.access-box h1 {
+    font-size: 80px;
+    margin-bottom: 10px;
+    background: linear-gradient(45deg, #ffffff, #cbd5ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Paragraph */
+.access-box p {
+    font-size: 15px;
+    line-height: 1.6;
+    opacity: 0.9;
+    margin-bottom: 30px;
+}
+
+/* Premium button */
+.back-btn {
+    position: absolute;
+    right: -130%;
+    top: -50%;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(45deg, #ff7eb3, #ff758c);
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 20px rgba(255, 117, 140, 0.4);
+}
+
+/* Hover effect */
+.back-btn:hover {
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 10px 30px rgba(255, 117, 140, 0.6);
+}
+
+/* Click effect */
+.back-btn:active {
+    transform: scale(0.96);
+}
+
+/* Smooth animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 🔥 RESPONSIVE BREAKPOINTS */
+
+@media (max-width: 768px) {
+    .access-box {
+        padding: 40px 25px;
+    }
+
+    .access-box h1 {
+        font-size: 60px;
+    }
+
+    .access-box p {
+        font-size: 14px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .access-box {
+        padding: 30px 20px;
+        border-radius: 16px;
+    }
+
+    .access-box h1 {
+        font-size: 50px;
+    }
+
+    .access-box p {
+        font-size: 13px;
+    }
+
+    /* Button adjust for small screens */
+    .back-btn {
+        top: 15px;
+        right: 15px;
+        padding: 8px 14px;
+        font-size: 12px;
+    }
+}

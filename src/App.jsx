@@ -13,13 +13,14 @@ import { Team } from "./components/Team";
 import { Contact } from "./components/contact";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
-import { UserProfile } from "./screen/UserProfile"
+// import { UserProfile } from "./screen/UserProfile"
 import { Account } from "./screen/Account"
 import Login from "./Auth/Login";
 import Signup from "./Auth/Sinup";
 import RefSinup from "./Auth/RefSinup"
 import AdminScanner from "./screen/AdminScanner";
 import UsersPage from "./screen/UsersPage"
+import NotFound from "./screen/NotFound";
 import "./App.css";
 
 // Smooth scroll for internal links
@@ -29,7 +30,7 @@ export const scroll = new SmoothScroll('a[href*="#"]', {
 });
 
 const PrivateRoute = () => {
-  const { userData} = useContext(UserContaxt)
+  const { userData } = useContext(UserContaxt)
 
   const token = localStorage.getItem("global_user_token");
 
@@ -76,12 +77,16 @@ const App = () => {
             }
           />
           {/* New user page route */}
-          <Route path="/user" element={<UserProfile />} />
+          {/* <Route path="/user" element={<UserProfile />} /> */}
           <Route path="/fund-status" element={<Account />} />
           <Route path="/scanner" element={<AdminScanner />} />
           <Route path="/users" element={<UsersPage />} />
-          
+
+          {/* 🔥 404 for private routes */}
+          <Route path="*" element={<NotFound />} />
         </Route>
+        {/* 🔥 404 for public routes */}
+        <Route path="*" element={<NotFound />} />
 
       </Routes>
     </BrowserRouter>

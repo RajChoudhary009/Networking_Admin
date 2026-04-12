@@ -1,5 +1,6 @@
 import { createContext, useState, useEffect } from 'react'
 import axios from "axios";
+import { SERVER_API_URL } from "../server/server";
 export const UserContaxt = createContext(null)
 
 export const UserWrapper = ({ children }) => {
@@ -15,7 +16,7 @@ export const UserWrapper = ({ children }) => {
                 return;
             }
             
-            const res = await axios.post("http://localhost:8000/api/users/current",{}, {
+            const res = await axios.post(`${SERVER_API_URL}/api/users/current`,{}, {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }
