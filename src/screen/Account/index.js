@@ -248,6 +248,9 @@ export const Account = () => {
 
               {scannerList.length > 0 && currentScanner && (
                 <>
+                  <h3 className="payment-heading">
+                    Admin Upload Scanner
+                  </h3>
                   {/* Slider */}
                   <div className="slider-container">
                     <button className="slide-btn left" onClick={prevSlide}>‹</button>
