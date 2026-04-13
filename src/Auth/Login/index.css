@@ -151,6 +151,12 @@
     flex-direction: column;
     justify-content: center;
   }
+
+  @media (max-width: 768px) {
+    .lf-right {
+     display: none;
+    }
+  }
   
   .lf-right h1 {
     font-size: 2rem;
@@ -215,3 +221,20 @@
       text-align: center;
     }
   }
+
+   /* Login Page Forgot Password */
+.lf-forgot-btn {
+  display: flex;
+  align-self: flex-end;
+  color: #007bff;
+  cursor: pointer;
+  font-weight: 500;
+  margin-bottom: 20px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.lf-forgot-btn:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
