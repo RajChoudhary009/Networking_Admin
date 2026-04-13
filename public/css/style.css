@@ -288,6 +288,17 @@ header .intro-text {
   list-style: none;
   padding: 0;
 }
+
+@media screen and (max-width: 480px) {
+  #header {
+    width: 111% !important;
+  }
+  #features {
+    background: #f6f6f6;
+    width: 111% !important;
+  }
+}
+
 #about .about-text li:before {
   content: "\f00c";
   font-family: "FontAwesome";
@@ -602,5 +613,64 @@ label {
 @media (max-width: 768px) {
   #about img {
     margin: 50px 0;
+  }
+}
+
+
+/* Desktop */
+.intro-text h1 {
+  font-size: 60px;   /* 👈 pehle 60+ hoga, ab chhota */
+  font-weight: 700;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .intro-text h1 {
+    font-size: 32px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .intro-text h1 {
+    font-size: 30px;   /* 👈 perfect mobile size */
+    line-height: 1.3;
+  }
+  .intro-text{
+    width: 90%;
+  }
+}
+
+/* Desktop */
+.intro-text p {
+  font-size: 18px;   /* readable but not too big */
+  line-height: 1.6;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .intro-text p {
+    font-size: 16px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .intro-text p {
+    font-size: 16px;   /* 👈 perfect mobile size */
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-toggle {
+    margin-right: 45px;
+  }
+}
+
+@media (max-width: 576px) {
+  .custom-col {
+    width: 90%;
+    
   }
 }
