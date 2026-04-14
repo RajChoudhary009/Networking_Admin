@@ -73,11 +73,11 @@ const Login = () => {
                     {/* LEFT SIDE */}
                     <div className="lf-left">
                         <div className="lf-brand">
-                            <div className="lf-logo">{` USER PANEL `}</div>
+                            <div className="lf-logo">{` ADMIN `}</div>
                             {/* <span>Admin</span> */}
                         </div>
 
-                        <h2 className="lf-heading">Welcome Back!</h2>
+                        <h2 className="lf-heading">Welcome !</h2>
                         <p className="lf-subtext">
                             Login to your account to track your earnings, manage your referrals,
                             and grow your network easily.
@@ -128,6 +128,12 @@ const Login = () => {
                                     return;
                                 }
 
+                                const confirmAction = window.confirm(
+                                    `Reset Password\n\nAre you sure you want to reset your password?\nA reset link will be sent to your registered email.`
+                                  );
+                              
+                                  if (!confirmAction) return;
+
                                 try {
                                     setLoading(true);
                                     const res = await axios.post(`${SERVER_API_URL}/api/users/forgot-password`, {
@@ -161,47 +167,7 @@ const Login = () => {
 
                     {/* RIGHT SIDE */}
                     <div className="lf-right">
-                        <h1
-                            style={{
-                                background: "linear-gradient(90deg, #6366f1, #a855f7)",
-                                WebkitBackgroundClip: "text",
-                                WebkitTextFillColor: "transparent"
-                            }}
-                        >
-                            Build Your Network &
-                            <br />
-                            Earn Smart Income
-                        </h1>
-
-                        <p className="lf-quote">
-                            “Our platform helps you grow your network, track your team performance,
-                            earn rewards, and build a strong passive income with a powerful and
-                            easy-to-use dashboard.”
-                        </p>
-
-                        <div className="lf-profile">
-
-                            <div>
-                                <strong>USER PANEL</strong>
-                                <p>Manage your network efficiently</p>
-                            </div>
-                        </div>
-
-                        <div className="lf-teams">
-                            <span className="lf-teams-title">GROWING WITH TOP NETWORKERS</span>
-
-                            <div className="lf-teams-list">
-                                <span>Discord</span>
-                                <span>Mailchimp</span>
-                                <span>Grammarly</span>
-                                <span>Attentive</span>
-                                <span>HelloSign</span>
-                                <span>Intercom</span>
-                                <span>Square</span>
-                                <span>Dropbox</span>
-                            </div>
-                        </div>
-
+                        
                     </div>
 
                 </div>

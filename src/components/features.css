@@ -10,7 +10,7 @@
 
 @media screen and (max-width: 480px) {
     .rank-bg-container {
-        width: 111% !important;
+        width: 100% !important;
     }
 }
 
@@ -107,8 +107,8 @@
 
 @media screen and (max-width: 480px) {
     .rank-card {
-        width: 80%;
-        margin-right: 13%;
+        width: 90%;
+        /* margin-right: 13%; */
     }
 }
 

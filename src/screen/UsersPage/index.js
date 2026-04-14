@@ -171,6 +171,15 @@ const UsersPage = () => {
             {/* 🔥 Inputs */}
             <input
               type="text"
+              placeholder="email"
+              defaultValue={selectedUser.email}
+              onChange={(e) =>
+                setFormData({ ...formData, email: e.target.value })
+              }
+            />
+
+            <input
+              type="text"
               placeholder="Name"
               defaultValue={selectedUser.name}
               onChange={(e) =>
